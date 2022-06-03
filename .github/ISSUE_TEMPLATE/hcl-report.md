@@ -12,22 +12,21 @@ assignees: ''
 
 **CPU**
 
-* Processor name: <!--(full name including vendor, brand and CPU number))-->
-* Core name: <!--(CPU core codename))-->
-* CPU base speed: <!--(based CPU speed))-->
-* CPU boost spped - <!--(boosted CPU speed))-->
-* Wattage: <!--(declared by producer processor wattage))-->
-* GPU: <!--(information about embedded graphics processing unit))-->
-* Results: <!--(link to measurement results))-->
+* Processor name: <!--(full name including vendor, model and CPU number))-->
+* Core name (optional): <!--(CPU core codename))-->
+* CPU base speed (optional): <!--(based CPU speed))-->
+* CPU boost speed (optional): <!--(boosted CPU speed))-->
+* Wattage (optional): <!--(declared by producer processor wattage))-->
+* GPU (optional): <!--(information about embedded graphics processing unit))-->
 
 **GPU**
 
 * GPU name: <!--(full name of GPU including vendor and chipset name))-->
 * Memory size: <!--(total amount of GPU memory declared by vendor))-->
 * Memory type: <!--(GPU's type of memory))-->
-* Bandwith: <!--(GPU's bandwith))-->
-* PCI-E Architecture: <!--(declared by producer generation of PCI-E architecture))-->
-* Multi-Graphics Technology: <!--(information about support for this technology))-->
+* Bandwith (optional): <!--(GPU's bandwith))-->
+* PCI-E Architecture (optional): <!--(declared by producer generation of PCI-E architecture))-->
+* Multi-Graphics Technology (optional): <!--(information about support for this technology))-->
 
 **Memory**
 
@@ -44,3 +43,7 @@ assignees: ''
   <!--(e.g CL17-17-17 means CAS Latency 17, tRCD 17, tRP 17 (numbers expressed in clock cycles) for given memory profile))-->
   * Voltage:
   <!--(memory voltage in Volts for given memory profile))-->
+
+**Dasharo Tools Suite logs (optional)**
+<!--(Run and provide logs from the DTS tool))-->
+<!--(https://github.com/Dasharo/docs/pull/212/files))-->

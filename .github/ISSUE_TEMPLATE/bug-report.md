@@ -9,7 +9,7 @@ assignees: ''
 
 
 **Dasharo version**
-<!--(The version of Dasharo you're using (e.g., `v0.2.0`))-->
+<!--(The version of Dasharo you're using (e.g., `v0.2.0`), or coreboot and edk2 commit hashes if built from an untagged revision)-->
 
 
 **Dasharo variant**

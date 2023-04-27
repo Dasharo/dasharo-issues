@@ -1,0 +1,48 @@
+name: Feature request
+description: Suggest a new feature or an improvement of existing functionality.
+labels: ["enhancement"]
+
+body:
+  - type: markdown
+    attributes:
+      value: Thanks for taking the time to fill out this feature request!
+
+  - type: textarea
+    id: description
+    attributes:
+      label: The problem you're addressing (if any)
+      description: A clear and concise description of the problem, if any, that this feature is intended to address.
+    validations:
+      required: false
+
+  - type: textarea
+    id: solution
+    attributes:
+      label: Describe the solution you'd like
+      description: If you have something in mind, a clear and concise description of what you want to happen. If you don't have something in mind, indicate as much.
+    validations:
+      required: false
+  
+  - type: textarea
+    id: value
+    attributes:
+      label: Where is the value to a user, and who might that user be?
+      description: Which users is this most likely to benefit? What user needs does this address? How might a user summarize this change or new thing?
+    validations:
+      required: false
+
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Describe alternatives you've considered
+      description: A clear and concise description of any alternative solutions or features you've considered.
+    validations:
+      required: false
+
+  - type: textarea
+    id: context
+    attributes:
+      label: Additional context
+      description: Add any other context or screenshots about the feature request here.
+    validations:
+      required: false

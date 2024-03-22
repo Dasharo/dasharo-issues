@@ -13,13 +13,13 @@ body:
       label: Device
       description: The model of device you're using Dasharo on.
     validations:
-      required: true
+      required: false
 
   - type: input
     id: version
     attributes:
-      label: Dasharo version
-      description: The version of Dasharo you're using (e.g., `v0.2.0`), or coreboot and edk2 commit hashes if built from an untagged revision
+      label: Firmware or software name and version
+      description: The name and version of firmware or software you're using (e.g., `Dasharo v0.2.0`), or commit hashes if built from an untagged revision
     validations:
       required: true
 
@@ -27,7 +27,7 @@ body:
     id: component
     attributes:
       label: Affected component(s) or functionality
-      description: The component or functionality of Dasharo that is not working as expected.
+      description: The component or functionality that is not working as expected.
     validations:
       required: false
 

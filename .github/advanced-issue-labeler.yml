@@ -1,0 +1,70 @@
+policy:
+  - template: [bug_report.yml, feature_request.yml]
+    section:
+      - id: [component]
+        block-list: [other]
+        label:
+          - name: firmware
+            keys: ['Dasharo firmware']
+
+          - name: DasharoToolsSuite 
+            keys: ['Dasharo Tools Suite']
+
+          - name: doc 
+            keys: ['Dasharo documentation']
+
+          - name: EC
+            keys: ['EC firmware']
+      - id: [device]
+        block-list: [other]
+        label:
+          - name: asus_kgpe-d16
+            keys: ['Asus KGPE-D16']
+
+          - name: dell_optiplex_9010 
+            keys: ['Dell OptiPlex 7010', 'Dell OptiPlex 9010']
+
+          - name: 'MSI PRO Z690-A boards'
+            keys: ['MSI Pro Z690-A']
+
+          - name: 'MSI PRO Z790-P boards'
+            keys: ['MSI Pro Z790-P']
+
+          - name: novacustom_nv4x_tgl 
+            keys: ['NovaCustom NV4x 11th Gen']
+
+          - name: novacustom_nv4x_adl 
+            keys: ['NovaCustom NV4x 12th Gen']
+
+          - name: novacustom_ns5x/7x_tgl 
+            keys: ['NovaCustom NS5x 11th Gen', 'NovaCustom NS7x 11th Gen']
+
+          - name: novacustom_ns5x/7x_adl 
+            keys: ['NovaCustom NS5x 11th Gen', 'NovaCustom NS7x 12th Gen']
+
+          - name: pcengines_apu2
+            keys: ['PC Engines APU2', 'PC Engines APU3', 'PC Engines APU4', 'PC Engines APU6']
+
+          - name: protectli_vault_bsw
+            keys: ['Protectli FW2B', 'Protectli FW4B', 'Protectli FW4C']
+
+          - name: protectli_vault_kbl
+            keys: ['Protectli FW6']
+
+          - name: protectli_vault_glk
+            keys: ['Protectli VP2410']
+
+          - name: protectli_vault_ehl
+            keys: ['Protectli VP2420']
+
+          - name: protectli_vault_cml
+            keys: ['Protectli VP4630', 'Protectli VP4650', 'Protectli VP4670']
+
+          - name: protectli_vault_adl
+            keys: ['Protectli VP6630', 'Protectli VP6650', 'Protectli VP6670']
+
+          - name: qemu_q35
+            keys: ['QEMU Q35 Emulator']
+
+          - name: raptor-cs_talos-2
+            keys: ['Raptor CS Talos II']

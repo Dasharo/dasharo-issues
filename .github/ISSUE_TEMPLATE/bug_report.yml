@@ -7,27 +7,78 @@ body:
     attributes:
       value: Thanks for taking the time to fill out this bug report!
 
-  - type: input
+  - type: dropdown
+    id: component
+    attributes:
+      label: Component
+      description: Please chose components related to this issue.
+      multiple: true
+      # When updating list of components please also update labeling policy
+      # policy: `.github/advanced-issue-labeler.yml`
+      options:
+        - 'Dasharo firmware'
+        - 'Dasharo Tools Suite'
+        - 'Dasharo documentation'
+        - 'EC firmware'
+        - 'other'
+    validations:
+      required: true
+
+  - type: dropdown
     id: device
     attributes:
       label: Device
-      description: The model of device you're using Dasharo on.
+      description: Model of device(s) on which issue was seen on
+      multiple: true
+      # When updating list of components please also update labeling policy
+      # policy: `.github/advanced-issue-labeler.yml`
+      options:
+        - 'Asus KGPE-D16'
+        - 'Dell OptiPlex 7010'
+        - 'Dell OptiPlex 9010'
+        - 'MSI Pro Z690-A'
+        - 'MSI Pro Z790-P'
+        - 'NovaCustom NV4x 11th Gen'
+        - 'NovaCustom NV4x 12th Gen'
+        - 'NovaCustom NS5x 11th Gen'
+        - 'NovaCustom NS5x 12th Gen'
+        - 'NovaCustom NS7x 11th Gen'
+        - 'NovaCustom NS7x 12th Gen'
+        - 'PC Engines APU2'
+        - 'PC Engines APU3'
+        - 'PC Engines APU4'
+        - 'PC Engines APU6'
+        - 'Protectli FW2B'
+        - 'Protectli FW4B'
+        - 'Protectli FW4C'
+        - 'Protectli FW6'
+        - 'Protectli VP2410'
+        - 'Protectli VP2420'
+        - 'Protectli VP4630'
+        - 'Protectli VP4650'
+        - 'Protectli VP4670'
+        - 'Protectli VP6630'
+        - 'Protectli VP6650'
+        - 'Protectli VP6670'
+        - 'QEMU Q35 Emulator'
+        - 'Raptor CS Talos II'
+        - 'other'
     validations:
       required: true
 
   - type: input
-    id: version
+    id: version-fw
     attributes:
       label: Dasharo version
-      description: The version of Dasharo you're using (e.g., `v0.2.0`), or coreboot and edk2 commit hashes if built from an untagged revision
+      description: The version of Dasharo firmware (e.g., `v0.2.0`), or commit hashes if built from an untagged revision; skip if Dasharo firmware has not been used
     validations:
-      required: true
+      required: false
 
-  - type: textarea
-    id: component
+  - type: input
+    id: version-dts
     attributes:
-      label: Affected component(s) or functionality
-      description: The component or functionality of Dasharo that is not working as expected.
+      label: Dasharo Tools Suite version
+      description: The version of Dasharo Tools Suite (e.g., `v1.2.0`), or commit hashes if built from an untagged revision; skip if Dasharo Tool Suite has not been used
     validations:
       required: false
 
@@ -83,7 +134,7 @@ body:
     id: context
     attributes:
       label: Additional context
-      description: Add any other context about the problem here.
+      description: Add any other context about the problem here. You can elaborate here if any of the selections from the list did not match.
     validations:
       required: false
 

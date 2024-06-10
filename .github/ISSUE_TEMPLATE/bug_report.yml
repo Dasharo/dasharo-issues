@@ -1,6 +1,6 @@
 name: Bug report
 description: Report a problem in existing functionality, including documentation and infrastructure.
-labels: ["bug"]
+labels: ["bug", "needs review"]
 
 body:
   - type: markdown

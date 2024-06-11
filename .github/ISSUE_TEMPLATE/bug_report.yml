@@ -44,6 +44,8 @@ body:
         - 'NovaCustom NS5x 12th Gen'
         - 'NovaCustom NS7x 11th Gen'
         - 'NovaCustom NS7x 12th Gen'
+        - 'NovaCustom V54 14th Gen'
+        - 'NovaCustom V56 14th Gen'
         - 'PC Engines APU2'
         - 'PC Engines APU3'
         - 'PC Engines APU4'

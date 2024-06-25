@@ -30,6 +30,12 @@ policy:
           - name: 'MSI PRO Z790-P boards'
             keys: ['MSI Pro Z790-P']
 
+          - name: novacustom_v54_mtl
+            keys: ['NovaCustom V54 14th Gen']
+
+          - name: novacustom_v56_mtl
+            keys: ['NovaCustom V56 14th Gen']
+
           - name: novacustom_nv4x_tgl 
             keys: ['NovaCustom NV4x 11th Gen']
 

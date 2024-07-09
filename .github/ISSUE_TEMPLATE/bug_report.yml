@@ -85,6 +85,14 @@ body:
       required: false
 
   - type: input
+    id: test-case-id
+    attributes:
+      label: Test case ID
+      description: ID of a test which failed and triggered this bug report. Required to be filled in by Dasharo team members, if such test exists.
+    validations:
+      required: false
+
+  - type: input
     id: summary
     attributes:
       label: Brief summary

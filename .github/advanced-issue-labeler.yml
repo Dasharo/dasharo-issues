@@ -7,10 +7,10 @@ policy:
           - name: firmware
             keys: ['Dasharo firmware']
 
-          - name: DasharoToolsSuite 
+          - name: DasharoToolsSuite
             keys: ['Dasharo Tools Suite']
 
-          - name: doc 
+          - name: doc
             keys: ['Dasharo documentation']
 
           - name: EC
@@ -21,7 +21,7 @@ policy:
           - name: asus_kgpe-d16
             keys: ['Asus KGPE-D16']
 
-          - name: dell_optiplex_9010 
+          - name: dell_optiplex_9010
             keys: ['Dell OptiPlex 7010', 'Dell OptiPlex 9010']
 
           - name: 'MSI PRO Z690-A boards'
@@ -36,16 +36,16 @@ policy:
           - name: novacustom_v56_mtl
             keys: ['NovaCustom V56 14th Gen']
 
-          - name: novacustom_nv4x_tgl 
+          - name: novacustom_nv4x_tgl
             keys: ['NovaCustom NV4x 11th Gen']
 
-          - name: novacustom_nv4x_adl 
+          - name: novacustom_nv4x_adl
             keys: ['NovaCustom NV4x 12th Gen']
 
-          - name: novacustom_ns5x/7x_tgl 
+          - name: novacustom_ns5x/7x_tgl
             keys: ['NovaCustom NS5x 11th Gen', 'NovaCustom NS7x 11th Gen']
 
-          - name: novacustom_ns5x/7x_adl 
+          - name: novacustom_ns5x/7x_adl
             keys: ['NovaCustom NS5x 11th Gen', 'NovaCustom NS7x 12th Gen']
 
           - name: pcengines_apu2
@@ -68,6 +68,9 @@ policy:
 
           - name: protectli_vault_adl
             keys: ['Protectli VP6630', 'Protectli VP6650', 'Protectli VP6670']
+            
+          - name: protectli_vault_adln
+            keys: ['Protectli VP3210', 'Protectli VP3230']
 
           - name: qemu_q35
             keys: ['QEMU Q35 Emulator']

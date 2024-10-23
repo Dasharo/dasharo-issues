@@ -56,6 +56,8 @@ body:
         - 'Protectli FW6'
         - 'Protectli VP2410'
         - 'Protectli VP2420'
+        - 'Protectli VP3210'
+        - 'Protectli VP3230'
         - 'Protectli VP4630'
         - 'Protectli VP4650'
         - 'Protectli VP4670'

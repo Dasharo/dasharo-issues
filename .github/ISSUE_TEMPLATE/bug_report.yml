@@ -95,7 +95,7 @@ body:
     validations:
       required: false
 
-  - type: input
+  - type: textarea
     id: summary
     attributes:
       label: Brief summary
@@ -103,7 +103,7 @@ body:
     validations:
       required: true
 
-  - type: textarea
+  - type: input
     id: reproductibility
     attributes:
       label: How reproducible

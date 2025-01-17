@@ -24,6 +24,9 @@ policy:
           - name: dell_optiplex_9010
             keys: ['Dell OptiPlex 7010', 'Dell OptiPlex 9010']
 
+          - name: hardkernel_odroid_h4
+            keys: ['Hardkernel Odroid H4']
+
           - name: 'MSI PRO Z690-A boards'
             keys: ['MSI Pro Z690-A']
 

@@ -36,6 +36,7 @@ body:
         - 'Asus KGPE-D16'
         - 'Dell OptiPlex 7010'
         - 'Dell OptiPlex 9010'
+        - 'Hardkernel Odroid H4'
         - 'MSI Pro Z690-A'
         - 'MSI Pro Z790-P'
         - 'NovaCustom NV4x 11th Gen'

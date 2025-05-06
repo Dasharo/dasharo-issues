@@ -39,6 +39,9 @@ policy:
           - name: novacustom_v56_mtl
             keys: ['NovaCustom V56 14th Gen']
 
+          - name: novacustom_nuc_box
+            keys: ['NovaCustom NUC BOX 14th Gen']
+
           - name: novacustom_nv4x_tgl
             keys: ['NovaCustom NV4x 11th Gen']
 

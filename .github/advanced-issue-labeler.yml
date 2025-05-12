@@ -63,6 +63,9 @@ policy:
           - name: protectli_vault_kbl
             keys: ['Protectli FW6']
 
+          - name: protectli_vault_jsl
+            keys: ['Protectli V1210', 'Protectli V1211', 'Protectli V1410', 'Protectli V1610']
+
           - name: protectli_vault_glk
             keys: ['Protectli VP2410']
 
@@ -74,7 +77,7 @@ policy:
 
           - name: protectli_vault_adl
             keys: ['Protectli VP6630', 'Protectli VP6650', 'Protectli VP6670']
-            
+
           - name: protectli_vault_adln
             keys: ['Protectli VP3210', 'Protectli VP3230', 'Protectli VP2430']
 

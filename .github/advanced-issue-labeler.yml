@@ -79,7 +79,7 @@ policy:
             keys: ['Protectli VP6630', 'Protectli VP6650', 'Protectli VP6670']
 
           - name: protectli_vault_adln
-            keys: ['Protectli VP3210', 'Protectli VP3230', 'Protectli VP2430']
+            keys: ['Protectli VP3210', 'Protectli VP3230', 'Protectli VP2430', 'Protectli VP2440']
 
           - name: qemu_q35
             keys: ['QEMU Q35 Emulator']

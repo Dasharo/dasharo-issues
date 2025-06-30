@@ -1,7 +1,10 @@
 # Dasharo Issues repository
 
 This repository tracks issues and feature development progress for the
-[Dasharo Project](https://dasharo.com/).
+[Dasharo Project](https://dasharo.com/). This repositories tracks issues
+for most of the repositories in the Dasharo universe. There are some exceptions
+with their own trackers, listed below:
+- [Open Source Firmware Validation](https://github.com/Dasharo/open-source-firmware-validation/issues)
 
 You can [file a new issue](https://github.com/Dasharo/dasharo-issues/issues/new/choose)
 or [view all issues](https://github.com/Dasharo/dasharo-issues/issues).

@@ -20,6 +20,10 @@ Bounties are categorized per difficulty:
 - [Medium](https://github.com/Dasharo/dasharo-issues/issues?q=is%3Aissue%20state%3Aopen%20label%3Abounty-medium)
 - [Hard](https://github.com/Dasharo/dasharo-issues/issues?q=is%3Aissue%20state%3Aopen%20label%3Abounty-hard)
 
+Bounties per product:
+- [DasharoToolsSuite](https://github.com/Dasharo/dasharo-issues/issues?q=is%3Aissue%20state%3Aopen%20(label%3Abounty-warmup%20OR%20label%3Abounty-easy%20OR%20label%3Abounty-medium%20OR%20label%3Abounty-hard%20OR%20label%3Abounty)%20AND%20label%3A%22DasharoToolsSuite%22)
+- [Others (mostly Dasharo firmware or documentation)](https://github.com/Dasharo/dasharo-issues/issues?q=is%3Aissue%20state%3Aopen%20(label%3Abounty-warmup%20OR%20label%3Abounty-easy%20OR%20label%3Abounty-medium%20OR%20label%3Abounty-hard%20OR%20label%3Abounty)%20-label%3A%22DasharoToolsSuite%22)
+
 You can also view all bounties
 [here](https://github.com/Dasharo/dasharo-issues/issues?q=is%3Aissue%20state%3Aopen%20label%3Abounty-warmup%20OR%20label%3Abounty-easy%20OR%20label%3Abounty-medium%20OR%20label%3Abounty-hard%20OR%20label%3Abounty).
 

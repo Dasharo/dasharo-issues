@@ -33,6 +33,7 @@ body:
       # When updating list of components please also update labeling policy
       # policy: `.github/advanced-issue-labeler.yml`
       options:
+        - 'ASRock Rack SPC741D8-2L2T/BCM'
         - 'Asus KGPE-D16'
         - 'Dell OptiPlex 7010'
         - 'Dell OptiPlex 9010'

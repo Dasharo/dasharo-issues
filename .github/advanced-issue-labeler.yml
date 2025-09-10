@@ -18,6 +18,9 @@ policy:
       - id: [device]
         block-list: [other]
         label:
+          - name: asrock_spc741d8
+            keys: ['ASRock Rack SPC741D8-2L2T/BCM']
+
           - name: asus_kgpe-d16
             keys: ['Asus KGPE-D16']
 

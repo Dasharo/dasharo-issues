@@ -1,7 +1,7 @@
 # Dasharo Issues repository
 
 This repository tracks issues and feature development progress for the
-[Dasharo Project](https://dasharo.com/). This repositories tracks issues
+[Dasharo Project](https://dasharo.com/). This repository tracks issues
 for most of the repositories in the Dasharo universe. There are some exceptions
 with their own trackers, listed below:
 - [Open Source Firmware Validation](https://github.com/Dasharo/open-source-firmware-validation/issues)
@@ -15,17 +15,17 @@ You can find more details on the Bug Bounty program
 [on our website](https://3mdeb.com/bug-bounty/).
 
 Bounties are categorized per difficulty:
-- [Warmup](https://github.com/Dasharo/dasharo-issues/issues?q=is%3Aissue%20state%3Aopen%20label%3Abounty-warmup)
-- [Easy](https://github.com/Dasharo/dasharo-issues/issues?q=is%3Aissue%20state%3Aopen%20label%3Abounty-easy)
-- [Medium](https://github.com/Dasharo/dasharo-issues/issues?q=is%3Aissue%20state%3Aopen%20label%3Abounty-medium)
-- [Hard](https://github.com/Dasharo/dasharo-issues/issues?q=is%3Aissue%20state%3Aopen%20label%3Abounty-hard)
+- [Warmup](https://github.com/Dasharo/dasharo-issues/issues?q=is:issue+state:open+label:bounty-warmup)
+- [Easy](https://github.com/Dasharo/dasharo-issues/issues?q=is:issue+state:open+label:bounty-easy)
+- [Medium](https://github.com/Dasharo/dasharo-issues/issues?q=is:issue+state:open+label:bounty-medium)
+- [Hard](https://github.com/Dasharo/dasharo-issues/issues?q=is:issue+state:open+label:bounty-hard)
 
 Bounties per product:
-- [DasharoToolsSuite](https://github.com/Dasharo/dasharo-issues/issues?q=is%3Aissue%20state%3Aopen%20(label%3Abounty-warmup%20OR%20label%3Abounty-easy%20OR%20label%3Abounty-medium%20OR%20label%3Abounty-hard%20OR%20label%3Abounty)%20AND%20label%3A%22DasharoToolsSuite%22)
-- [Others (mostly Dasharo firmware or documentation)](https://github.com/Dasharo/dasharo-issues/issues?q=is%3Aissue%20state%3Aopen%20(label%3Abounty-warmup%20OR%20label%3Abounty-easy%20OR%20label%3Abounty-medium%20OR%20label%3Abounty-hard%20OR%20label%3Abounty)%20-label%3A%22DasharoToolsSuite%22)
+- [DasharoToolsSuite](https://github.com/Dasharo/dasharo-issues/issues?q=is:issue+state:open+%28label:bounty-warmup+OR+label:bounty-easy+OR+label:bounty-medium+OR+label:bounty-hard+OR+label:bounty%29+AND+label:DasharoToolsSuite)
+- [Others (mostly Dasharo firmware or documentation)](https://github.com/Dasharo/dasharo-issues/issues?q=is:issue+state:open+%28label:bounty-warmup+OR+label:bounty-easy+OR+label:bounty-medium+OR+label:bounty-hard+OR+label:bounty%29+-label:DasharoToolsSuite)
 
 You can also view all bounties
-[here](https://github.com/Dasharo/dasharo-issues/issues?q=is%3Aissue%20state%3Aopen%20label%3Abounty-warmup%20OR%20label%3Abounty-easy%20OR%20label%3Abounty-medium%20OR%20label%3Abounty-hard%20OR%20label%3Abounty).
+[here](https://github.com/Dasharo/dasharo-issues/issues?q=is:issue+state:open+%28label:bounty-warmup+OR+label:bounty-easy+OR+label:bounty-medium+OR+label:bounty-hard+OR+label:bounty%29).
 
 <!-- BEGIN DEVICE ISSUES -->
 ## Issues per device

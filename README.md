@@ -72,6 +72,7 @@ Below is a list of open issues affecting specific devices:
 - [Protectli VP6670](https://github.com/dasharo/dasharo-issues/issues?q=is%3Aissue+state%3Aopen+label%3A%22protectli_vault_adl%22)
 - [QEMU Q35 Emulator](https://github.com/dasharo/dasharo-issues/issues?q=is%3Aissue+state%3Aopen+label%3A%22qemu_q35%22)
 - [Raptor CS Talos II](https://github.com/dasharo/dasharo-issues/issues?q=is%3Aissue+state%3Aopen+label%3A%22raptor-cs_talos-2%22)
+- [Dasharo Tools Suite (Nightly)](https://boot.dasharo.com/dts/nightly.ipxe)
 <!-- END DEVICE ISSUES -->
 
 ## GitHub help

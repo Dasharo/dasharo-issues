@@ -29,12 +29,91 @@ You can also view all bounties
 
 <!-- BEGIN DEVICE ISSUES -->
 ## Issues per device
+[here](https://github.com/Dasharo/dasharo-issues/issues?q=is:issue+state:open+%28
 
-Below is a list of open issues affecting specific devices:
-- [Asus KGPE-D16](https://github.com/dasharo/dasharo-issues/issues?q=is%3Aissue+state%3Aopen+label%3A%22asus_kgpe-d16%22)
-- [Dell OptiPlex 7010](https://github.com/dasharo/dasharo-issues/issues?q=is%3Aissue+state%3Aopen+label%3A%22dell_optiplex_9010%22)
-- [Dell OptiPlex 9010](https://github.com/dasharo/dasharo-issues/issues?q=is%3Aissue+state%3Aopen+label%3A%22dell_optiplex_9010%22)
-- [Hardkernel Odroid H4](https://github.com/dasharo/dasharo-issues/issues?q=is%3Aissue+state%3Aopen+label%3A%22hardkernel_odroid_h4%22)
+<!-- BEGIN EC TESTABILITY INTERFACE -->
+## EC Testability Interface
+
+To enable comprehensive remote testing of laptops, an EC testability interface is needed to control various platform aspects such as key presses, button presses, and power control. This interface can be implemented over SMBus or parallel and would require extending the debugger firmware to support a bidirectional console.
+
+### Requirements
+
+The solution should include:
+
+- A simple console interface for controlling:
+  - Key press simulation
+  - Button press simulation  
+  - Power control
+  - Other EC-controlled functions
+
+- BIOS option to enable debugging (should default to disabled)
+- Support for remote testing scenarios
+- Extend debugger firmware to support bidirectional console communication
+
+### Implementation Plan
+
+1. **EC Testability Interface Design:**
+   - Create a communication protocol over SMBus or parallel interface
+   - Define command set for:
+     - Key press simulation (power button, lid switch, etc.)
+     - Button press generation
+     - Power state control (S0, S3, S5, etc.)
+     - EC register state dump
+     - Flashing capabilities
+
+2. **BIOS Extension:**
+   - Add a BIOS option to enable/disable the debugging interface
+   - The option should be disabled by default
+   - When enabled, expose the interface via selected communication method
+
+3. **Debugger Firmware Extension:**
+   - Implement bidirectional console support
+   - Handle commands from remote testing infrastructure
+   - Send responses back to the tester
+
+4. **Usage:**
+   - The interface should be accessible when:
+     - System is in:
+       - S0 state (working state)
+       - S3 state (if supported)
+       - S5 state (if wake-up from S5 is supported)
+     - Testing infrastructure can send commands to:
+       - Simulate power button press
+       - Simulate lid switch events
+       - Control power states
+       - Read EC register states
+       - Trigger firmware flashing
+
+5. **Security Considerations:**
+   - The interface should be protected and only accessible when:
+     - BIOS debugging option is enabled
+     - Only in test environments
+     - Not exposed to end users
+
+### Benefits
+
+This EC testability interface will enable remote testing of laptops by providing:
+
+- Full remote control over laptop functions
+- Simulation of hardware events for comprehensive testing
+- Support for continuous integration and remote testing pipelines
+
+This will unblock full remote testing capabilities for platforms without direct EC access.
+
+### Target Devices
+
+The solution should support the following devices:
+
+- All x86 based Novacustom laptops including:
+  - NV4x (TGL and ADL)
+  - NS5x/7x (TGL, ADL, and MTL)
+  - NS7x (TGL and ADL)
+  - V54 (MTL)
+  - V56 (MTL)
+
+<!-- END EC TESTABILITY INTERFACE -->
+
+## Issues per device
 - [MSI Pro Z690-A](https://github.com/dasharo/dasharo-issues/issues?q=is%3Aissue+state%3Aopen+label%3A%22MSI%20PRO%20Z690-A%20boards%22)
 - [MSI Pro Z790-P](https://github.com/dasharo/dasharo-issues/issues?q=is%3Aissue+state%3Aopen+label%3A%22MSI%20PRO%20Z790-P%20boards%22)
 - [NovaCustom NS5x 11th Gen](https://github.com/dasharo/dasharo-issues/issues?q=is%3Aissue+state%3Aopen+label%3A%22novacustom_ns5x/7x_tgl%22)

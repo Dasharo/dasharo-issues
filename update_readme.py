@@ -1,52 +1,58 @@
 #!/usr/bin/env python3
-
 """
-update_readme_devices.py
+Script to update the README.md with current device issue links.
+Also includes EC testability interface documentation.
+"""
 
-This script updates the `README.md` file in the Dasharo Issues repository by generating
+import re
 a section that lists supported devices and links each one to its open issues on GitHub.
 
-It should be executed each time we add a new device (or drop existing one), to make sure
-the list is up to date.
-
-It:
-- Loads the `.github/advanced-issue-labeler.yml` policy file.
+# List of devices to track - can be extended
+DEVICES = [
+    ("novacustom_nv4x_tgl", "NovaCustom NV4x 11th Gen"),
+    ("novacustom_ns5x/7x_tgl", "NovaCustom NS5x/NS7x 11th Gen"),
+    ("novacustom_ns5x/7x_adl", "NovaCustom NS5x/NS7x 12th Gen"),
+    ("novacustom_nv4x_adl", "NovaCustom NV4x 12th Gen"),
 - Extracts all device labels and their associated keys.
-- Generates a Markdown list of device names linking to GitHub issue searches.
-- Replaces the content between `<!-- BEGIN DEVICE ISSUES -->` and `<!-- END DEVICE ISSUES -->`
-  in `README.md` with this list.
-
-Usage:
-    Run this script from the root of the repository:
+    ("novacustom_v54_mtl", "NovaCustom V54 14th Gen"),
+    ("novacustom_v56_mtl", "NovaCustom V56 14th Gen"),
+    ("asus_kgpe-d16", "Asus KGPE-D16"),
+    ("novacustom_nv4x_tgl", "NovaCustom NV4x 11th Gen"),
+    ("novacustom_ns5x/7x_tgl", "NovaCustom NS5x 11th Gen"),
+    ("dell_optiplex_7010", "Dell OptiPlex 7010"),
+    ("dell_optiplex_9010", "Dell OptiPlex 9010"),
+    ("hardkernel_odroid_h4", "Hardkernel Odroid H4"),
         python3 update_readme_devices.py
-"""
+    ("MSI PRO Z790-P boards", "MSI Pro Z790-P"),
+]
 
-import yaml
-import urllib.parse
-import re
 
+def generate_device_section():
+    """Generate the device issues section."""
+    lines = ["## Issues per device", ""]
 REPO = "dasharo/dasharo-issues"
 YAML_PATH = ".github/advanced-issue-labeler.yml"
 README_PATH = "README.md"
 START_MARKER = "<!-- BEGIN DEVICE ISSUES -->"
-END_MARKER = "<!-- END DEVICE ISSUES -->"
+        lines.append(f"- [{display_name}]({url})")
+    return "\n".join(lines) + "\n"
 
-def load_policy_yaml(path):
-    with open(path, "r") as f:
-        return yaml.safe_load(f)
 
+def update_readme():
+    """Update the README.md file with current device links."""
+    readme_path = Path("README.md")
 def extract_device_entries(policy):
     entries = []
     for section in policy.get("policy", []):
         for sec in section.get("section", []):
             if sec.get("id") == ["device"] and "other" in sec.get("block-list", []):
-                for item in sec.get("label", []):
-                    label_name = item["name"]
-                    for key in item.get("keys", []):
-                        entries.append((key, label_name))
-    return entries
-
-def generate_issue_search_url(repo, label_name):
+    
+    # Find the device issues section
+    start_marker = "## Issues per device"
+    end_marker = "<!-- END DEVICE ISSUES -->"
+    
+    start_idx = content.find(start_marker)
+    end_idx = content.find(end_marker)
     quoted = urllib.parse.quote(f'"{label_name}"')
     return f"https://github.com/{repo}/issues?q=is%3Aissue+state%3Aopen+label%3A{quoted}"
 
@@ -59,11 +65,12 @@ def generate_readme_section(entries):
 
 def update_readme(readme_path, new_section):
     with open(readme_path, "r") as f:
-        content = f.read()
+    with open(readme_path, "w") as f:
+        f.write(new_content)
 
-    pattern = re.compile(rf"{START_MARKER}.*?{END_MARKER}", re.DOTALL)
-    replacement = f"{START_MARKER}\n{new_section}\n{END_MARKER}"
 
+if __name__ == "__main__":
+    update_readme()
     if pattern.search(content):
         updated = pattern.sub(replacement, content)
     else:

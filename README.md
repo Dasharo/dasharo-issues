@@ -78,3 +78,20 @@ Below is a list of open issues affecting specific devices:
 
 * [GitHub search syntax](https://help.github.com/articles/search-syntax/)
 * [GitHub search syntax related to issues](https://help.github.com/articles/searching-issues/)
+
+
+<!-- Fix for issue #1153 -->
+```python
+#!/usr/bin/env python3
+
+"""
+automatic_docs_build_test.py
+
+Automatically tests Dasharo build documentation by:
+1. Finding all published historic releases for every supported device
+2. Finding the build documentation for each device
+3. Building the firmware according to the documentation instructions
+4. Comparing the resulting binary with the published release
+
+The test starts from a fresh OS installation (using preseed files) to ensure
+no dependencies are missing from the documentation.

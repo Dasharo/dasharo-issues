@@ -32,8 +32,10 @@ You can also view all bounties
 
 Below is a list of open issues affecting specific devices:
 - [Asus KGPE-D16](https://github.com/dasharo/dasharo-issues/issues?q=is%3Aissue+state%3Aopen+label%3A%22asus_kgpe-d16%22)
-- [Dell OptiPlex 7010](https://github.com/dasharo/dasharo-issues/issues?q=is%3Aissue+state%3Aopen+label%3A%22dell_optiplex_9010%22)
-- [Dell OptiPlex 9010](https://github.com/dasharo/dasharo-issues/issues?q=is%3Aissue+state%3Aopen+label%3A%22dell_optiplex_9010%22)
+- [Dell OptiPlex 7010 SFF](https://github.com/dasharo/dasharo-issues/issues?q=is%3Aissue+state%3Aopen+label%3A%22dell_optiplex_7010%22)
+- [Dell OptiPlex 7010 MT/DT](https://github.com/dasharo/dasharo-issues/issues?q=is%3Aissue+state%3Aopen+label%3A%22dell_optiplex_7010%22)
+- [Dell OptiPlex 9010 SFF](https://github.com/dasharo/dasharo-issues/issues?q=is%3Aissue+state%3Aopen+label%3A%22dell_optiplex_9010%22)
+- [Dell OptiPlex 9010 MT/DT](https://github.com/dasharo/dasharo-issues/issues?q=is%3Aissue+state%3Aopen+label%3A%22dell_optiplex_9010%22)
 - [Hardkernel Odroid H4](https://github.com/dasharo/dasharo-issues/issues?q=is%3Aissue+state%3Aopen+label%3A%22hardkernel_odroid_h4%22)
 - [MSI Pro Z690-A](https://github.com/dasharo/dasharo-issues/issues?q=is%3Aissue+state%3Aopen+label%3A%22MSI%20PRO%20Z690-A%20boards%22)
 - [MSI Pro Z790-P](https://github.com/dasharo/dasharo-issues/issues?q=is%3Aissue+state%3Aopen+label%3A%22MSI%20PRO%20Z790-P%20boards%22)
